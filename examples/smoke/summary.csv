@@ -1,0 +1,4 @@
+method,pairs,correct,agreement,mean_winner_margin
+base,2,1,0.5,-0.000935673713684082
+sft,2,1,0.5,-0.0009337365627288818
+dpo,2,1,0.5,-0.0009341239929199219

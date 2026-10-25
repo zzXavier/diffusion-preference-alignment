@@ -1,0 +1,9 @@
+{
+  "seed": 20261103,
+  "updates": 64,
+  "resolution": 256,
+  "eval_seeds": 4,
+  "learning_rate": 0.0002,
+  "beta": 100,
+  "rank": 4
+}
