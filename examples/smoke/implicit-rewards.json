@@ -1,0 +1,26 @@
+[
+  {
+    "method": "sft",
+    "pair": 694474,
+    "human_winner": 1,
+    "implicit_reward_margin_for_human_winner": 0.0002562999725341797
+  },
+  {
+    "method": "sft",
+    "pair": 556299,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": 0.00013113021850585938
+  },
+  {
+    "method": "dpo",
+    "pair": 694474,
+    "human_winner": 1,
+    "implicit_reward_margin_for_human_winner": 6.556510925292969e-05
+  },
+  {
+    "method": "dpo",
+    "pair": 556299,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": 0.00024437904357910156
+  }
+]

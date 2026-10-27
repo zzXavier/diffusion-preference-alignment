@@ -20,6 +20,27 @@ SMALL_REV="3ee6c9f225f088ad5d35b624b6514b091e6a4849"
 
 
 def load_pipeline(device,smoke,cache,base_path=None):
+    if smoke and base_path is None:
+        from tools.fetch_smoke import fetch
+        base_path=cache/"tiny-sd"
+        if not (base_path/"model_index.json").is_file() or not (base_path/"unet/diffusion_pytorch_model.bin").is_file():
+            fetch(base_path)
+    if not smoke and base_path is not None:
+        manifest=json.loads((Path(__file__).resolve().parents[1]/"configs/sd15-source.json").read_text())
+        for entry in manifest["files"]:
+            path=Path(base_path)/entry["rfilename"]
+            if not path.is_file() or path.stat().st_size!=entry["size"]:
+                raise ValueError(f"Local SD1.5 snapshot differs at {entry['rfilename']}")
+            if entry.get("lfs"):
+                with path.open("rb") as f:
+                    digest=hashlib.file_digest(f,"sha256").hexdigest()
+                if digest!=entry["lfs"]["sha256"]:
+                    raise ValueError(f"Local SD1.5 weight hash differs at {entry['rfilename']}")
+            else:
+                body=path.read_bytes()
+                git_blob=hashlib.sha1(b"blob "+str(len(body)).encode()+bytes([0])+body).hexdigest()
+                if git_blob!=entry["blobId"]:
+                    raise ValueError(f"Local SD1.5 config hash differs at {entry['rfilename']}")
     dtype=torch.float32 if device=="cpu" or smoke else torch.float16
     kw=dict(torch_dtype=dtype,cache_dir=str(cache/"hub"),safety_checker=None,
             feature_extractor=None,requires_safety_checker=False)

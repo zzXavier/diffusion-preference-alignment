@@ -63,13 +63,29 @@ def run(args):
     if not train or not test:
         raise RuntimeError("Need disjoint training and evaluation pairs")
     torch.set_num_threads(2)
+    if not smoke:
+        if args.base is None:
+            from huggingface_hub import snapshot_download
+            manifest=json.loads((ROOT/"configs/sd15-source.json").read_text())
+            args.base=Path(snapshot_download(manifest["repo"],revision=manifest["revision"],
+                           allow_patterns=[e["rfilename"] for e in manifest["files"]],cache_dir=args.cache/"hub"))
+        from tools.cache_inputs import prepare as prepare_inputs
+        args.input_cache=args.input_cache or args.cache/"p05-inputs.safetensors"
+        if not args.input_cache.is_file():
+            prepare_inputs(args.base,pairs,args.input_cache)
     pipe=load_pipeline(args.device,smoke,args.cache,args.base)
     seed_all(CFG["seed"])
     size=32 if smoke else CFG["resolution"]
     sched=DDPMScheduler.from_config(pipe.scheduler.config)
-    cache={}
-    for r in train+test:
-        cache[r["id"]]=(latents(pipe,[pairs/f for f in r["images"]],size),encode(pipe,[r["prompt"]]))
+    if args.input_cache:
+        if smoke:
+            raise ValueError("The optional fp32 input cache is only for formal SD1.5")
+        from tools.cache_inputs import load
+        cache=load(args.input_cache,train+test,pipe)
+    else:
+        cache={}
+        for r in train+test:
+            cache[r["id"]]=(latents(pipe,[pairs/f for f in r["images"]],size),encode(pipe,[r["prompt"]]))
     params=add_adapter(pipe.unet,CFG["rank"])
     start=trainable_state(pipe.unet)
     formal_steps=3 if smoke else CFG["updates"]
@@ -92,12 +108,17 @@ def run(args):
                 estimates=pair_errors(pipe.unet,sched,clean,text,noise,t,pipe.device)
                 loss=estimates[r["winner"]] if method=="sft" else dpo_loss(estimates,ref,r["winner"],CFG["beta"])
                 opt.zero_grad(set_to_none=True)
+                if not torch.isfinite(loss):
+                    raise FloatingPointError(f"{method} loss diverged at step {step}")
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(params,1.)
                 opt.step()
                 losses.append(float(loss.detach()))
+                if (step+1)%8==0 or step+1==formal_steps:
+                    print(f"{method} {step+1}/{formal_steps}, loss={losses[-1]:.6f}",flush=True)
             update=save_reload(pipe.unet,start,out/f"{method}-adapter.safetensors")
             status[method]={"updates":formal_steps,"delta_l2":update,"train_loss":losses}
+        print(f"{method}: scoring {len(test)} held-out pairs",flush=True)
         with torch.inference_mode():
             for r in test:
                 clean,text=cache[r["id"]]
@@ -115,8 +136,8 @@ def run(args):
         generate(pipe,test[0]["prompt"],CFG["seed"],3 if smoke else 12,size,out/(method+"-sample.png"))
     (out/"heldout.json").write_text(json.dumps(output_rows,indent=2))
     (out/"run.json").write_text(json.dumps({"profile":args.mode,"base":SMALL if smoke else BASE,"revision":SMALL_REV if smoke else REV,
-          "device":str(pipe.device),"train_ids":[r["id"] for r in train],"test_ids":[r["id"] for r in test],
-          "runs":status},indent=2))
+          "device":str(pipe.device),"input_protocol":"cached-fp32-cpu" if args.input_cache else "on-device","train_ids":[r["id"] for r in train],"test_ids":[r["id"] for r in test],
+          "runs":status,"torch":str(torch.__version__),"hardware":torch.cuda.get_device_name() if pipe.device.type=="cuda" else "cpu"},indent=2))
     evaluate(out)
 
 
@@ -127,5 +148,6 @@ if __name__=="__main__":
     p.add_argument("--cache",type=Path,default=ROOT/".cache")
     p.add_argument("--base",type=Path)
     p.add_argument("--pairs",type=Path)
+    p.add_argument("--input-cache",type=Path)
     p.add_argument("--out",type=Path)
     run(p.parse_args())
