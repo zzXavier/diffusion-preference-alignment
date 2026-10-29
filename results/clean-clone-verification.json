@@ -1,0 +1,65 @@
+{
+  "remote_commit": "f3b1ff58fcf74a2f15c957f59eb90a8345b463e0",
+  "clean_clone_unit_tests": true,
+  "clean_clone_cpu_demo_matches_shipped_summary": true,
+  "reevaluation_of_stored_predictions_matches_summary_bytes": true,
+  "full_retrain": true,
+  "agreement": {
+    "base": {
+      "decisions_matching": 12,
+      "pairs": 12,
+      "max_absolute_margin_difference": 0.0
+    },
+    "sft": {
+      "decisions_matching": 12,
+      "pairs": 12,
+      "max_absolute_margin_difference": 8.39531421661377e-05
+    },
+    "dpo": {
+      "decisions_matching": 12,
+      "pairs": 12,
+      "max_absolute_margin_difference": 0.00018752366304397583
+    }
+  },
+  "rerun_scores": [
+    {
+      "method": "base",
+      "pairs": "12",
+      "correct": "9",
+      "agreement": "0.75",
+      "mean_winner_margin": "0.011059194293920882"
+    },
+    {
+      "method": "sft",
+      "pairs": "12",
+      "correct": "9",
+      "agreement": "0.75",
+      "mean_winner_margin": "0.010700860492458256"
+    },
+    {
+      "method": "dpo",
+      "pairs": "12",
+      "correct": "7",
+      "agreement": "0.5833333333333334",
+      "mean_winner_margin": "0.012265421052385742"
+    }
+  ],
+  "sha256": {
+    "summary.csv": {
+      "shipped": "3e357fa886febce087897af755070525ef0efc061f848cac6a8dd9c5033c1dd2",
+      "retrained": "1375456d5dadf836998536d5b1d2daceec1da2ded1bfe51cd707d53f88c96b35"
+    },
+    "heldout.json": {
+      "shipped": "9ea3ad44c3a2dd220b68f95bba49afdaff89d8e8debb1fc5761a6146dcc16258",
+      "retrained": "886fdec3953649aac7c5034b995e7b608cb06cdbdca3658d088c3a265cb84ad4"
+    },
+    "sft-adapter.safetensors": {
+      "shipped": "41a7083c8c37b754a4e3a02c516e2cd8b699f67f2830efbeea204c7691dcc9f4",
+      "retrained": "4c2b28ce9129a714082f8ef288ee7e17d769e199e8a59c356550b0a441747773"
+    },
+    "dpo-adapter.safetensors": {
+      "shipped": "17ce192f99e585313f621aa30f08e513bce5c5a72d0c0bced3c1fbfa2b73d98e",
+      "retrained": "a57e900b5adab9f027ec89b35fdb599b476a19f324353d4d7c5aa67588204f27"
+    }
+  }
+}
