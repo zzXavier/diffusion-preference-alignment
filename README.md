@@ -13,8 +13,8 @@ This reproduction trains matched LoRA adapters with supervised denoising on the 
 When the GPU is busy, extract posterior modes and CLIP text states on CPU first. This stores no raw photographs in the repository. With a populated Pick-a-Pic cache run:
 
 ```shell
-python tools/cache_inputs.py --base LOCAL_SD15 --pairs CACHE/pairs --out CACHE/p05-inputs.safetensors
-python run.py reproduce --base LOCAL_SD15 --cache CACHE --input-cache CACHE/p05-inputs.safetensors --device cuda
+python tools/cache_inputs.py --base LOCAL_SD15 --pairs CACHE/pairs --out CACHE/preference-inputs.safetensors
+python run.py reproduce --base LOCAL_SD15 --cache CACHE --input-cache CACHE/preference-inputs.safetensors --device cuda
 ```
 
 The default formal command constructs the same CPU cache automatically, before loading the GPU model. The archive is checked against the SD1.5 revision, specific pair manifest, image size and float32 CPU protocol. The run records whether inputs were derived on-device or provided through this cache.
