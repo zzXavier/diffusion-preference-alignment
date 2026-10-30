@@ -28,7 +28,7 @@ python run.py reproduce --device cuda
 python run.py evaluate
 ```
 
-Use `--pairs PATH` to reuse the public Pick-a-Pic subset, `--base PATH` for a local Diffusers snapshot and `--out PATH` for a fresh run. The same training IDs, seed, updates and input resolutions are used for SFT and DPO. A frozen base branch computes DPO's matched-noise reference margin. Evaluation labels are untouched human votes. For each held-out prompt the code saves a paired denoising-margin preference prediction, records the disagreements and samples the same prompt and seed from all three arms. Denoising margins are a model-based proxy for image preference; this protocol does not infer human judgments on new generated outputs.
+Use `--pairs PATH` to reuse the public Pick-a-Pic subset, `--base PATH` for a local Diffusers snapshot and `--out PATH` for a fresh run. The same training IDs, seed, updates and input resolutions are used for SFT and DPO. A frozen base branch computes DPO's matched-noise reference margin. Evaluation labels are untouched human votes. For every held-out pair the code saves a denoising-margin preference prediction and records disagreements. Only the first held-out prompt is sampled with the same seed across the three arms for the visual comparison. Denoising margins are a model-based proxy for image preference; this protocol does not infer human judgments on new generated outputs.
 
 `src/alignment.py` defines the losses; `src/sd.py` provides SD loading and verified LoRA save/reload; `configs/` fixes the formal budget; `results/` is reserved for formal measured outputs. See `HANDOFF.md` for the actual run status.
 
