@@ -1,9 +1,5 @@
-# Upstream sources
+# Source register
 
-[huggingface/diffusers](https://github.com/huggingface/diffusers/tree/35087a644038eb531f48581708d4763044cb4852)
+[Diffusers Diffusion-DPO](https://github.com/huggingface/diffusers/tree/35087a644038eb531f48581708d4763044cb4852/examples/research_projects/diffusion_dpo), Apache-2.0. The preference objective uses matched timesteps and noise on each winner/loser pair, a frozen reference branch and sigmoid DPO. This repo implements the small LoRA training loop, matched SFT comparison, held-out scoring and exact save/reload checks. The public model and data have separate terms.
 
-- Revision: 35087a644038eb531f48581708d4763044cb4852
-- Reported code license: Apache-2.0
-- Starting point: examples/research_projects/diffusion_dpo/train_diffusion_dpo.py
-- Integration: use the upstream implementation as a separately pinned dependency. Preserve the original notices when redistributing source.
-- Weights and data have separate terms. Their source, revision and attribution belong with the experiment manifest.
+[SD1.5 base](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/451f4fe16113bff5a5d2269ed5ad43b0592e9a14). [Smoke pipeline](https://huggingface.co/hf-internal-testing/tiny-stable-diffusion-pipe/tree/3ee6c9f225f088ad5d35b624b6514b091e6a4849). [Pick-a-Pic v1 anonymous public copy](https://huggingface.co/datasets/pickapic-anonymous/pickapic_v1/tree/8e69b58d729339cb7771133c70ee18b527fd4ae3). Original model weights and images are downloaded locally. Dataset fetching records the byte-level hashes of every selected image along with split and anonymous ranking ID.

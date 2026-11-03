@@ -1,9 +1,5 @@
-# P05 交接记录
+# Handoff
 
-当前阶段：上游版本已固定，正式验收待完成。
+Passed locally on CPU: unit test, all three smoke arms using the fixed official tiny SD pipeline, real Pick-a-Pic human pairs, weights saved/reloaded, held-out predictions, independent reward-margin disagreement export, and `evaluate` from saved predictions. The smoke profile trained each adapter on four training pairs with three updates and checked two distinct held-out pairs. The parameter delta was 0.04874021 for SFT and 0.05104085 for DPO. See `examples/smoke/`. These numbers verify optimization and reproducibility; report the full SD1.5 measurements separately.
 
-最近已核实：项目远端以及 UPSTREAM.md 中的源码提交。
-
-待执行：运行上游入口 examples/research_projects/diffusion_dpo/train_diffusion_dpo.py ，保存日志，再按项目 README 的实验目标添加留出集对照。
-
-验收要求：从干净克隆运行演示与正式基线，使用保存的预测重建结果，涉及训练则测试权重重载。
+The reproducible public subset has 24 distinct training and 12 held-out prompts. Next command after downloading the real SD1.5 base is `python run.py reproduce --device cuda --cache CACHE --base LOCAL_SD15`. Inspect `results/implicit-rewards.json` for held-out human decisions whose implicit reward margin declined, then repeat the demo and evaluation from a fresh clone. No natural-image result has yet been established.
