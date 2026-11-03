@@ -1,0 +1,74 @@
+[
+  {
+    "method": "sft",
+    "pair": 694474,
+    "human_winner": 1,
+    "implicit_reward_margin_for_human_winner": -0.29751621186733246
+  },
+  {
+    "method": "sft",
+    "pair": 141448,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.36654615541920066
+  },
+  {
+    "method": "sft",
+    "pair": 119682,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.2945623826235533
+  },
+  {
+    "method": "sft",
+    "pair": 512717,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.15761556569486856
+  },
+  {
+    "method": "sft",
+    "pair": 496478,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -1.2535681016743183
+  },
+  {
+    "method": "sft",
+    "pair": 76262,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.6294476334005594
+  },
+  {
+    "method": "sft",
+    "pair": 406552,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.152992969378829
+  },
+  {
+    "method": "dpo",
+    "pair": 556299,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.9188087657094002
+  },
+  {
+    "method": "dpo",
+    "pair": 743799,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.23893986362963915
+  },
+  {
+    "method": "dpo",
+    "pair": 114098,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.4193444736301899
+  },
+  {
+    "method": "dpo",
+    "pair": 119682,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -0.4630506504327059
+  },
+  {
+    "method": "dpo",
+    "pair": 406552,
+    "human_winner": 0,
+    "implicit_reward_margin_for_human_winner": -1.984244561754167
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": 107296,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "360c2fcd0a32e7fc46c737fa2e820f7297b94472064514faf442ec8d4ec6e38f",
+      "177af32444782fff824519f1a81a096c40e96fdb275b47f1a806bbab13f1d430"
+    ],
+    "prompt_sha256": "dc279d2f2a30ef8a090720d995a74e6012cfa2ecd785c783f035da2a8fb4608d"
+  },
+  {
+    "id": 516563,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "7bf4c7326c7cd9b63083a6186be9f69d8531ce25b103bf6f876d52e83fce6659",
+      "711eeacbad426e9ac2b687469b643031a53c0c647f8a05469d797b6d08fa1079"
+    ],
+    "prompt_sha256": "6ef3689da678a36fe64ba42c07d814e0d3306da8f8385fbea8fe5974db3a201c"
+  },
+  {
+    "id": 383412,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "ce639266e61e23eb332fa4c13c9581379426f2d7bde6c7c24405f8b6ab059ee2",
+      "7f6ac58f9bbf43c2594115a7c15ec917151cf96046d3b4080381d0b0e6cc3fea"
+    ],
+    "prompt_sha256": "148fd40c6ab2f8abdb736b18248bd54b7d8792fbfb326811b42142219c5b9e07"
+  },
+  {
+    "id": 92358,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "5041dd3816b90b57fe87d0881d7ccc8077adc3a48e64eb8ae60ee9cc08afceec",
+      "b2763127b9fee79e5e3699ce48aad626d41ec5fc9d81d608b5f9a0c58efcf6dd"
+    ],
+    "prompt_sha256": "8543acdfa76ca5692c29a61241b5a14856189177cfcfa03b3d8e3e0c4c311515"
+  },
+  {
+    "id": 644591,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "277a8753ad222c004eea1f1ed8c58bdda510d1755fc5febe5d25d25a55d34f4f",
+      "0fc563c762eb78df8db9f7393c15a6a70fda5fbfa424e4cb2891fbd9fbc7ea92"
+    ],
+    "prompt_sha256": "c0dacc642f0850793be07bd060f6c1f680578879ee419f4d04f01725898a1d23"
+  },
+  {
+    "id": 508944,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "8e210c05f302970db2189b1307b964bd46eed16ddea590dcfbb47f4720a7a0c0",
+      "ea3cc44ad91a55a5381de70e49fe82c5a2c50cd7e0fd264636f617ed405f7be2"
+    ],
+    "prompt_sha256": "9e07df76b3ae8f8e44ce7e85174f228cc63ca7af6115def49b7557ce94ed90e2"
+  },
+  {
+    "id": 660780,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "747541199aa823ed459ccadd9a673b44e807f5bf8282bf9b78993ffcc4f1caa7",
+      "5b750e8148e6225d4717b9bec709564780cb57792c703edc54037d9d9bf8a399"
+    ],
+    "prompt_sha256": "e6a6c629f52a2fa2282a109ad684b90c65c9f1d5dc55769336182d9227fc6ca2"
+  },
+  {
+    "id": 265452,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "128b9d461aaca1c8389e4348e2c59291079f0a3c1410997d35379f084deb2aa1",
+      "3a329fa6f693b1d24b9304a24919c74e5b6115fcd360543b0c33725f218e2c3f"
+    ],
+    "prompt_sha256": "4058e8762c2c6ab7b9c0a13b979d52150a6f2e9003629fe9178aa13df0aee330"
+  },
+  {
+    "id": 121499,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "7d677eaf669e4e1027accc95f4c3bcd8895236361c3df26930a43590f6deac0a",
+      "7cef9a2eb6baa2162328a3c2582a2a82fb73bfa91511ea07842d99ce94a0906c"
+    ],
+    "prompt_sha256": "30d5e8f322b176344ac6a61160d4e53f5dc2a6ac2767494bce316d32e8d8ebe7"
+  },
+  {
+    "id": 360531,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "b15e2097892b142ecff2a0f21cebc7db19d5c2f1be9cd2a69d5b34fdf6976dd0",
+      "93751c85aaf726975071c1debb5cdbe16345ee8c549100f0d99e4bdad659965b"
+    ],
+    "prompt_sha256": "7c9edca426b26f2c9a6b5befe3a90d62c393e4c9c85fb133449b852de7e41462"
+  },
+  {
+    "id": 253430,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "2d3dd73bb203440f8d748a638d972e4976e78140a775ab8eed6a82acebc62c8a",
+      "dec3644d519a8ecacfb1dfe84b6397203c6809f64d217eb786fb3e0b16ef7898"
+    ],
+    "prompt_sha256": "89009624964cb967bbaffdf29e0de0a89b54f7efbb4ce5cf6c4a94e8731c7a30"
+  },
+  {
+    "id": 552737,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "94a40988e13b1f96ecda55823860bbba3aacd4b58be6bcca10d5cda298a8ad20",
+      "0d13aecfbcaa4882a92b55dc2d70affb7daa581bdac8fd44f8f21f19e7677cb3"
+    ],
+    "prompt_sha256": "fd16dd958d88ead597ce92c20de01b951b8835ed9c9a04c579258bd964616a77"
+  },
+  {
+    "id": 91676,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "eb6612bb61dc4e5de141f4474e34ef35ed3c300e2d7289beccd0bff6ce5a4e6a",
+      "85f682defd544eb6857f22fc089171dc531a91a7bf7748d2404fde1140ad1ab9"
+    ],
+    "prompt_sha256": "84ea1e824766bed7718332431ba3c54f877f4b9a27e5253a3aa19974dd8520fb"
+  },
+  {
+    "id": 616300,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "5bc8912c084d96c47fb05f7a7b054ee8bf8a7c387c08fcd7a0e69dc283bc7ca9",
+      "3ec9502e9527bde1ea8cd40be04011e79595d4fafd4b4538cbbb146e8d7b75f9"
+    ],
+    "prompt_sha256": "85a2f59c529117ca010842b110579693abe80c792c75c82301ee32868a753c8e"
+  },
+  {
+    "id": 679850,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "31078c404e0c132342d13864425eae7a4c68fb5f6e22917d35e7151129946f74",
+      "6211e1924e43475c0df28a68ec9f672eada5a55ce206a1755e398845752654f5"
+    ],
+    "prompt_sha256": "5653861c715f1ad5f45578f2dcabfe431a78e507dba5da586fb364955af2e6f5"
+  },
+  {
+    "id": 596154,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "19a88f0a0ab6ff5edda4b598166c6d0a6ccbdecb5dd198faf972894d6b0c8cdf",
+      "1bacd4035dbd4129d48d170c304860e1efb04cb20413b7d3f7392480e14b1ba7"
+    ],
+    "prompt_sha256": "497039d79121604f25b9055e57190d0fef60c79b26bfcf4b32fda72ddbd850af"
+  },
+  {
+    "id": 479022,
+    "winner": 1,
+    "split": "train",
+    "sha256": [
+      "0878a1f2a6a0e027da8ba8cb7432f31b25fccf8d4eca25f0c040c422a1eafa06",
+      "2c14c3714220660884ef8ab0c667250d587365941109e03c460dcf25e615e307"
+    ],
+    "prompt_sha256": "656822ad4c30fdecee8b34261f216c4394862e5bc83ce02be17d57c4c32dc4bc"
+  },
+  {
+    "id": 310709,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "f2ede2f9a6b8a3734ffd7e6efe45d5670dac8492bb542e352be42fa9a8eb3b20",
+      "88be396e3e32350ab58e73a24933a40fbcab6be86a13e0d3b97d097feca753bd"
+    ],
+    "prompt_sha256": "fc1c67102b40c9e374edfe006fe5860e6dd1ea74e22f44c34d65a230115dbec2"
+  },
+  {
+    "id": 576945,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "29e8d38c8763728bcbd7d1e8c2ad35f2156ffb06cd937338de21f82c49fbbf24",
+      "c5dcda015ae12d77594efd366375ec79656e896138e8d7f94d161ac7f7268013"
+    ],
+    "prompt_sha256": "eb88c42a0fa1a18d941d68f14904a7af0b5b3bb181d19cf428ce9fa003b78543"
+  },
+  {
+    "id": 220569,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "4273d32c75fca23bc9b04f5d1253bbc766ef80c8c731ea6cb080947537c5a2fa",
+      "32a16929c882069700633272c092d71c3f1a8b14a1b01c47ae03246042ef90f9"
+    ],
+    "prompt_sha256": "9830eeaa240537ac288c628c5c5226c3fc839c6bc682cf9a7ecb2831eea667ce"
+  },
+  {
+    "id": 211661,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "cc0162f56dcb7b3fa7344b60ef6bbd4f47d88188f6dd303f0754c29d70f686ed",
+      "c2249ba336598bb40211a78cd01275d269082ffa6292a245ce44cab11817fbce"
+    ],
+    "prompt_sha256": "602c329ed5f25f8491a0983b99a26f7e2c93bb3c3996b7ca98fd59ba9499416e"
+  },
+  {
+    "id": 778034,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "09c363130d9c29671c3e2c3c634ce94949f8a39f7160843e12197479aeeada64",
+      "c2055049a8fdce34d2e0a9d2011e5a005f55a2d18fde261ccbffeb823341694e"
+    ],
+    "prompt_sha256": "2689f2765c25ebde162ba3d9a7b30f17c94ab8f221fb666a0f7367aa06bc3a43"
+  },
+  {
+    "id": 851459,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "6c1f80f51ddba6f430df51da1e73a9d2b497b5bf6e723620e1c5244e9b5bc692",
+      "2510458b7cf5e61001afa02b3a84a1e1cb631b610948261cf922a300b049f6ce"
+    ],
+    "prompt_sha256": "03d0a24cc4e84047b055c2c6a524d997fe43f72151cd88f4013a9956ce065aa2"
+  },
+  {
+    "id": 355347,
+    "winner": 0,
+    "split": "train",
+    "sha256": [
+      "f9422e6b5a7c651604b9dc6dc8fa5e8a51b8add40f51e00d9aa093689fe01204",
+      "c8d0b3e7d0d481fe8535ef52e9c582c71a5c7ba3cc28b3285394ed79be863bfc"
+    ],
+    "prompt_sha256": "1110e110f367d5c57d11b01e9e3d47bc699aff46e70adbc74dc70cb3c6fdd6e7"
+  },
+  {
+    "id": 694474,
+    "winner": 1,
+    "split": "validation",
+    "sha256": [
+      "e00244d63c86c0d4ac440b2029cdef60168218ad74eb3092e4f898cdabe61116",
+      "47815802b895fda0604dfa3ff0e872dc30bb9d01831ea9d83a5c902d76a08b04"
+    ],
+    "prompt_sha256": "6f703da7ebabd8697ec06c3664bcf83f537f04821375c43d8f44affa38cd26f5"
+  },
+  {
+    "id": 556299,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "22e5df7d9259c1cf8946a772c5a72d3bd951ee71ace900ef2decdfe4aa9d98ed",
+      "e720ea6b7b581a69a40c3d18eb1f3a3eb0c1e73cab8637cf28ecc47d0c09096b"
+    ],
+    "prompt_sha256": "a36503eb630772d0d5ea8c3a33e26f5d9e97b906e25fbd71a23f5b1be7632677"
+  },
+  {
+    "id": 542274,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "dfbe26e021db8dfca53765e5e3a4798de15912ec183d091047a425e855c3294f",
+      "89e710abd28700e7fb890328b08a6e9c8b7daa4fb4f066fc23241d9d11a355da"
+    ],
+    "prompt_sha256": "9454424add8f76a6459884dfe380d1d88268f5f0be3666ffe5b8f69fcf69fc48"
+  },
+  {
+    "id": 743799,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "c2dc8369b95ee3a399d17f887eaa42339e1e3a226116fa85a366e811abe00a1b",
+      "f18446c05b6a7623ce1db5a03d4d5d38ad848572b5fce34a1f388105ab3415a4"
+    ],
+    "prompt_sha256": "3b98da8499c49c605ef878b5357c80833f2d3e9ba9d272f3fed4ce6c7bd855c7"
+  },
+  {
+    "id": 114098,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "332421954aff2d705d504683fd37b9561c4cee6c356fb4e2edb346aadd64a77a",
+      "55e031ea1a30656b7222d855f10d9542ea76698f8c71d1eb52886e9d86f24d99"
+    ],
+    "prompt_sha256": "29d4d8fc1653f1bb1a95ce6eeb86aa5048ddb786cd13b269044aee3ff82f21b1"
+  },
+  {
+    "id": 719844,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "6a1bab69f5860ba78a507fbc7f861471a54e1a8c4991038f6b94487753699106",
+      "8913a26a49698d52ff965eac1f5367d2f28cfbf3483aab7b29d93e7e271de77f"
+    ],
+    "prompt_sha256": "6673ee219888d85850f44cacd2112478c739bd62640291b5a5678a328b63f91b"
+  },
+  {
+    "id": 141448,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "7d935e2c27636cdc5aef60e94c58073b47a82e020b1be47227561525e7d8eb8f",
+      "5528ced58dc83da74447d97a24c44eb06e505f9207e08889c124a6c490b032d6"
+    ],
+    "prompt_sha256": "d01f6330feaa3ca8eab55339b17cae5b7a89797104d0d70becf454380d969123"
+  },
+  {
+    "id": 119682,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "20c99f63ea9a17855c9812f57f5ba1b24c9416051fe73a3a8927eb16ee7f53d5",
+      "98cc0a6151d7822a613906f41c3c853b564710bd5836a183bb050379a4a4613a"
+    ],
+    "prompt_sha256": "028bb2abb3e876a44b6ddb52c6b8166e9c4d891ecd447b7e3aa1a6bccab5c57c"
+  },
+  {
+    "id": 512717,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "6e491a3787a4d9e9cb8b4cac979c47f108484945e5a2dd8ff13fe578b62b5b9a",
+      "1729ec42d7a2a8644a02765abbd995214e95654d674dbe3aee0294cf72cf7f26"
+    ],
+    "prompt_sha256": "a6f065b17dc2eabcc8c70ee2bdc8d3a7f1612fb94e2e4b14d86e3ddefd669fd2"
+  },
+  {
+    "id": 496478,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "64acf2ac564b41c1e4ddf1e96715688a61ee10693b98c3438968ac06659e6d41",
+      "636352b4bd567310a45fe472a4028dcdd4c5dc2b0d348fd8ec41c29d0331a44d"
+    ],
+    "prompt_sha256": "fe14a42ba64faf7fdfedc14f21f69bb74d2c2feec7fdcb52c3339327b09e28fb"
+  },
+  {
+    "id": 76262,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "b0096ecde80cba5c64e8874c41536bd54f06ba18aedfafde143b8366fb075b34",
+      "ab233f20e57e3af694e6c510908129132165a4f679b754984a735aab441175f3"
+    ],
+    "prompt_sha256": "858fb630e7cdb89f1ecc844f916f97cf89481d2ad15784c153d992265b603398"
+  },
+  {
+    "id": 406552,
+    "winner": 0,
+    "split": "validation",
+    "sha256": [
+      "23d36db7030bed9c6abe59a5ceaca6a367af568b40566c9422c7669be7f2ec09",
+      "f752a9ef48ad8fef574d837d5e85ba2812801f8a4966e198e16aeb3cbbe75996"
+    ],
+    "prompt_sha256": "d9656198a022d5f5cefac8e13b2f7c825b81c09c47ff752a640704aee26ad865"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "files": [
+    {
+      "rfilename": "model_index.json",
+      "blobId": "daf7e2e2dfc64fb437a2b44525667111b00cb9fc",
+      "size": 541
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json",
+      "blobId": "82d05b0e688d7ea94675678646c427907419346e",
+      "size": 308
+    },
+    {
+      "rfilename": "text_encoder/config.json",
+      "blobId": "4d3e873ab5086ad989f407abd50fdce66db8d657",
+      "size": 617
+    },
+    {
+      "rfilename": "text_encoder/model.fp16.safetensors",
+      "blobId": "1ee9520565624366f70ff4ff21b8e79cc70cfb22",
+      "size": 246144864,
+      "lfs": {
+        "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+        "size": 246144864,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "tokenizer/merges.txt",
+      "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "size": 524619
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json",
+      "blobId": "2c2130b544c0c5a72d5d00da071ba130a9800fb2",
+      "size": 472
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json",
+      "blobId": "5ba7bf706515bc60487ad0e1816b4929b82542d6",
+      "size": 806
+    },
+    {
+      "rfilename": "tokenizer/vocab.json",
+      "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+      "size": 1059962
+    },
+    {
+      "rfilename": "unet/config.json",
+      "blobId": "1a02ee8abc93e840ffbcb2d68b66ccbcb74b3ab3",
+      "size": 743
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "375836c152030e60c8333fc3930392e0bbdda83e",
+      "size": 1719125304,
+      "lfs": {
+        "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+        "size": 1719125304,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vae/config.json",
+      "blobId": "55d78924fee13e4220f24320127c5f16284e13b9",
+      "size": 547
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "6dc048fdbcb71764cbd7af4ec6eb2a0e8a7bfbb2",
+      "size": 167335342,
+      "lfs": {
+        "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+        "size": 167335342,
+        "pointerSize": 134
+      }
+    }
+  ]
+}
