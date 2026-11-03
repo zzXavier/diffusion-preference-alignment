@@ -70,7 +70,11 @@ def run(args):
             args.base=Path(snapshot_download(manifest["repo"],revision=manifest["revision"],
                            allow_patterns=[e["rfilename"] for e in manifest["files"]],cache_dir=args.cache/"hub"))
         from tools.cache_inputs import prepare as prepare_inputs
-        args.input_cache=args.input_cache or args.cache/"p05-inputs.safetensors"
+        if args.input_cache is None:
+            args.input_cache = args.cache / "preference-inputs.safetensors"
+            legacy_cache = args.cache / "p05-inputs.safetensors"
+            if not args.input_cache.is_file() and legacy_cache.is_file():
+                args.input_cache = legacy_cache
         if not args.input_cache.is_file():
             prepare_inputs(args.base,pairs,args.input_cache)
     pipe=load_pipeline(args.device,smoke,args.cache,args.base)
