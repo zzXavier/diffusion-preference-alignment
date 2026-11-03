@@ -9,4 +9,4 @@ Last completed:
 2. CPU input extraction for 36 pairs, followed by run.py reproduce --device cuda with the local pinned SD1.5 and cached inputs.
 3. Formal summary.csv SHA-256: 3e357fa886febce087897af755070525ef0efc061f848cac6a8dd9c5033c1dd2.
 
-Next independent check from a clean clone: install requirements, run the smoke profile, run evaluate on the saved formal predictions, and reproduce into a fresh output directory. The same cache can be supplied to avoid repeated public downloads. Sample count, one seed, and the use of held-out denoising margins limit what can be inferred.
+The remote commit f3b1ff58fcf74a2f15c957f59eb90a8345b463e0 was clean-cloned and independently verified. Unit tests, the CPU demo, and formal reevaluation from predictions passed. A full CUDA retrain again gave 9/12, 9/12 and 7/12; the adapter and floating-point margins varied slightly. See results/clean-clone-verification.json for the comparison and hashes. No remaining experiment gate.
